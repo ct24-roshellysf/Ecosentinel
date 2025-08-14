@@ -405,39 +405,173 @@
 }
 .accordion-button{
     font-family: "Mozilla Headline", sans-serif;
+    font-size: 18px;
     text-align: center!important;
     justify-content: center!important;
     display: block;
-    padding: 3px;
+    padding: 10px;
 }
 .accordion-body{
     font-family: "Karla", sans-serif;
     text-align: justify;
+    font-size: 16px;
+    padding: 20px;
 }
+
 
 .gutter2{
     background-color: #889063;
 }
-/* En pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
+.img-gutter2{
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para un mejor diseño */
+    transition: transform 0.3s ease;
+}
+
+.img-gutter2:hover{
+    transform: scale(1.05);
+}
+.gutter2 .col{
+    margin-bottom: 10px;
+}
+
+@media(min-width:1200px){
+    .gutter2{
+        padding: 60px 40px;
+    }
+    .img-gutter2{
+        height: 200px;
+    }
+    .gutter2 .row{
+        margin: 0 -30px;
+    }
+    .gutter2 .col{
+        padding: 0 30px;
+        margin-bottom: 0;
+    }
+}
+/* Pantallas grandes - Laptops (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
     .gutter2 {
-        grid-template-columns: 1fr; /* 1 columna en móvil */
+        padding: 50px 30px;
+    }
+    
+    .img-gutter2 {
+        height: 200px;
+    }
+    
+    .gutter2 .col {
+        margin-bottom: 0;
     }
 }
 
+/* Pantallas medianas - Tablets horizontales (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .gutter2 {
+        padding: 40px 20px;
+    }
+    
+    .img-gutter2 {
+        height: 180px; /* Mantiene altura estándar */
+        width: 100%;
+    }
+    
+    .gutter2 .col {
+        margin-bottom: 0;
+    }
+    
+    .gutter2 .row {
+        margin: 0 -15px;
+    }
+}
+
+/* Tablets verticales y móviles grandes (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .gutter2 {
+        padding: 30px 15px;
+    }
+    
+    /* Cambiar a 2 columnas en tablets verticales */
+    .gutter2 .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .gutter2 .col {
+        flex: 0 0 50%; /* 2 columnas */
+        max-width: 50%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .img-gutter2 {
+        height: 200px; /* Altura reducida para 2 columnas */
+    }
+}
+
+/* Móviles pequeños (hasta 575px) */
+@media (max-width: 575px) {
+    .gutter2 {
+        padding: 20px 10px;
+    }
+    
+    /* Una columna en móviles */
+    .gutter2 .row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gutter2 .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .img-gutter2 {
+        height: 200px; /* Altura optimizada para móviles */
+        max-width: 40%; /* Reduce el ancho para mejor visualización */
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Móviles muy pequeños (hasta 375px) */
+@media (max-width: 375px) {
+    .gutter2 {
+        padding: 15px 8px;
+    }
+    
+    .gutter2 .col {
+        padding: 5px;
+        margin-bottom: 12px;
+    }
+    
+    .img-gutter2 {
+        height: 100px; /* Altura mínima para pantallas pequeñas */
+        max-width: 35%;
+        border-radius: 8px; /* Bordes menos redondeados */
+    }
+}
+
+
 .footer{
     background-color: #354024;
-    color: white;
+    color: white; 
     padding: 10px; 
     display: flex; 
     flex-direction: column;
     align-items: center;
+    font-size: 16px;
 }
 .email-contact{
     align-items: center;
     text-align: center;
     max-width: 400px;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 .logo-footer{
     height: 80px;

@@ -67,6 +67,133 @@
 .card1.menu-open{
     margin-top: 170px;
 }
+.card-title{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+}
+.card-text{
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px 30px;
+    line-height: 33px;
+}
+.img-solution{
+    width: 100%;
+    height: auto;
+    max-width: 475px;
+    margin: 0;
+    display: block;
+    border-radius: 5px !important;
+}
+
+/* === RESPONSIVE STYLES === */
+
+        /* Pantallas medianas y pequeñas (tablets y móviles) */
+        @media (max-width: 767px) {
+            /* Reorganizar las columnas para que la imagen esté arriba */
+            .row.g-0 {
+                flex-direction: column;
+            }
+            
+            /* Columna de imagen - centrada y arriba */
+            .col-md-4 {
+                order: 1;
+                text-align: center;
+                padding: 1rem 0;
+            }
+            
+            /* Columna de texto - debajo */
+            .col-md-8 {
+                order: 2;
+            }
+            
+            /* Imagen centrada y con tamaño apropiado */
+            .img-solution {
+                max-width: 300px;
+                margin: 0 auto;
+                border-radius: 5px !important;
+            }
+            
+            /* Ajustar título */
+            .card-title {
+                font-size: 24px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            
+            /* Ajustar texto */
+            .card-text {
+                font-size: 16px;
+                margin: 20px 20px;
+                line-height: 28px;
+                text-align: justify;
+            }
+            
+            /* Ajustar padding del card */
+            .card-body {
+                padding: 1rem;
+            }
+        }
+
+        /* Móviles pequeños */
+        @media (max-width: 575px) {
+            .card1 {
+                padding: 1rem;
+            }
+            
+            .img-solution {
+                max-width: 250px;
+                border-radius: 5px !important;
+            }
+            
+            .card-title {
+                font-size: 20px;
+                margin-top: 10px;
+                text-align: center;
+            }
+            
+            .card-text {
+                font-size: 14px;
+                margin: 15px 15px;
+                line-height: 24px;
+                text-align: justify;
+            }
+        }
+
+        /* Móviles muy pequeños */
+        @media (max-width: 374px) {
+            .card1 {
+                padding: 0.5rem;
+            }
+            
+            .img-solution {
+                max-width: 200px;
+                border-radius: 5px !important;
+            }
+            
+            .card-title {
+                font-size: 18px;
+                text-align: center;
+            }
+            
+            .card-text {
+                font-size: 13px;
+                margin: 10px 10px;
+                line-height: 22px;
+                text-align: justify;
+            }
+        }
+
+        /* Mantener diseño horizontal en pantallas grandes */
+        @media (min-width: 768px) {
+            .img-solution {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
 
 .section1{
     background-color: #4C3D19;
@@ -88,6 +215,7 @@
 .accordion-body{
     font-family: "Karla", sans-serif;
     text-align: justify;
+    padding: 20px;
 }
 
 .video{
@@ -118,6 +246,29 @@
     aspect-ratio: 650 / 400; /* Mantiene la proporción 650:400 */
 }
 
-.gutter1{
+.serial-monitor{
     background-color: #889063;
+    margin: 0;
+    padding: 0;
+    min-height: 110vh;
+}
+.img-SM{
+    width: 100%;
+    height: auto;
+    margin: 0 0 auto;
+    padding: 20px;
+    padding-top: 0px;
+}
+.title-SM{
+    font-family: "Mozilla Headline", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 25px!important;
+    padding: 15px;
+}
+.p-SM{
+    font-family: "Karla", sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    padding: 30px;
 }
