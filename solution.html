@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mozilla+Headline:wght@200..700&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="solution.css">
+    <title>Ecosentinel</title>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    <div class="navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Solución</a>
+        <a class="nav-link" href="aboutus.html">Sobre nosotras</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+        <a class="nav-link" href="index.html">Home</a>
+      </div>
+    </div>
+    <a class="navbar-brand ms-auto" href="#"><img class="logo-navbar" src="logo ecosentinel.jpg" alt="logo">
+    </a>
+  </div>
+</nav>
+</header>
+
+<main class="card1">
+    <div class="card" style="background-color: #354024; border-color: #CFBB99;color: aliceblue; max-width: 100%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="solucion.jpg" class="img-solution" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title" style="font-family: Mozilla Headline, sans-serif;">Objetivo General</h5>
+        <p class="card-text" style="font-family: Karla,sans-serif;">Diseñar, construir y validar un prototipo de vigilancia 
+          ambiental basado en tecnologías IoT que permite la detección temprana de focos de incendio forestal y el monitoreo 
+          de variables críticas del entorno. El sistema integra una placa ESP32 como unidad de control principal, capaz de gestionar 
+          múltiples sensores y comunicaciones inalámbricas, junto con un sensor DHT11 para medir temperatura y humedad relativa, un 
+          sensor MQ-135 para detectar gases contaminantes o inflamables y sensores PIR para registrar movimientos en el área supervisada.
+          La conectividad se garantiza mediante módulos LoRa, que permiten transmitir datos y fotografías a larga distancia sin depender de redes 
+          celulares, lo que resulta ideal para zonas rurales o de difícil acceso. Para la supervisión local, se incorpora una pantalla LCD que muestra en 
+          tiempo real las lecturas de los sensores y el estado del sistema, facilitando la toma de decisiones inmediatas.
+          El prototipo genera alertas automáticas visuales, sonoras y remotas cuando se detectan condiciones de riesgo, contribuyendo a que las autoridades y 
+          comunidades respondan de forma oportuna y coordinada. Además, su diseño modular y de bajo consumo energético lo convierte en una solución sostenible 
+          y escalable, alineada con los Objetivos de Desarrollo Sostenible, especialmente el ODS 13 (Acción por el clima) y el ODS 15 (Vida de ecosistemas terrestres).</p>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+    <div class="section1 accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+     <h1 class="accordion-title">Características</h1>
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Sistema integral de monitoreo ambiental
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Basado en una placa ESP32 como unidad central, integra sensores DHT11 para temperatura y humedad, MQ-135 para detección de gases contaminantes o inflamables, 
+        y PIR para registrar movimientos, permitiendo identificar condiciones críticas y posibles causas de incendios forestales.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Conectividad y visualización en tiempo real
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Utiliza módulos LoRa para la transmisión de datos e imágenes a largas distancias sin depender de redes celulares, e incorpora una pantalla LCD que muestra 
+        localmente las lecturas de los sensores y el estado del sistema, facilitando la supervisión inmediata en campo.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Respuesta rápida y operación en entornos remotos
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Genera alertas automáticas visuales, sonoras y remotas al detectar riesgos, cuenta con diseño modular y de bajo consumo energético, lo que permite su uso en zonas rurales y su integración con fuentes de energía renovable como paneles solares.</div>
+    </div>
+  </div>
+</div>
+
+<div class="serial-monitor">
+  <h2 class="title-SM">Resultados</h2>
+  <img class="img-SM" src="serial monitor.jpg" alt="1">
+        <p class="p-SM">En la lectura obtenida desde el monitor serial del ESP32, se muestran valores del sensor de calidad de aire MQ-135 
+          donde el voltaje oscila entre 0.739 V y 0.756 V, con una resistencia del sensor (Rs) aproximada entre 33.66 kΩ y 34.66 kΩ y un valor 
+          estimado de Ro (resistencia base en aire limpio) entre 8.41 kΩ y 8.66 kΩ. Estas variaciones son mínimas, lo que indica que la calidad 
+          del aire es estable y no hay presencia significativa de gases contaminantes o inflamables en el entorno medido. El hecho de que la relación 
+          Rs/Ro se mantenga cercana al valor esperado en aire limpio sugiere que las condiciones son normales y no se detectan indicios de humo u 
+          otras sustancias peligrosas en el ambiente.</p>
+</div>
+    
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+            const navbarToggler = document.querySelector('.navbar');
+            const section1 = document.querySelector('.card1');
+            const navbarCollapse = document.querySelector('#navbarNavAltMarkup');
+            
+            // Escuchar cuando se abre/cierra el menú de Bootstrap
+            navbarCollapse.addEventListener('shown.bs.collapse', function () {
+                // Menú se abrió
+                section1.classList.add('menu-open');
+            });
+            
+            navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+                // Menú se cerró
+                section1.classList.remove('menu-open');
+            });
+        });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

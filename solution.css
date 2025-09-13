@@ -1,0 +1,283 @@
+/*font-family: "Mozilla Headline", sans-serif; Titulo*/
+/*font-family: "Karla", sans-serif; Texto*/
+
+.navbar{
+    height: 90px; 
+    background-color: #f5edd6 !important; 
+    font-family:"Karla",sans-serif; 
+    font-size: 20px; 
+    font-weight: 580;
+}
+.navbar-collapse{
+    background-color: #f5edd6;
+    border-radius: 5px;
+    margin: 0!important;
+    padding: 0!important;
+    width: 100%!important;
+    display: none !important;
+}
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #f5edd6;
+        margin-left: -15px!important;
+        margin-right: -15px!important;
+        padding: 15px!important;
+    }
+    .navbar-collapse.show {
+        display: block !important;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-collapse {
+        background-color: #f5edd6;
+    }
+    .navbar-collapse.show {
+        display: block !important;
+    }
+
+}
+.navbar-collapse.show~ .navbar-brand .logo-navbar{
+    transform: translateY(-80px);
+    transition: transform 0.3s ease-in;
+}
+.nav-link{
+    display: flex; 
+    align-items: center;
+}
+.logo-navbar{
+    height: 80px;/*altura fija*/
+    max-width: 200px;/*ancho max*/
+    width: auto;/*ancho automatico*/
+    margin-left: auto;
+    order: 999;
+    z-index: 100;
+}
+/*telefonos, logo mas pequeño*/
+@media (max-width: 768px) {
+    .logo-navbar {
+        height: 80px; /*altura fija para pantallas pequeñas*/
+        max-width: 180px;
+        margin-top: -10px;
+    }
+}
+/*telefonos, mas pequeños*/
+@media (max-width: 480px) {
+    .logo-navbar {
+        height: 55px; /*altura fija para pantallas muy pequeñas*/
+        max-width: 150px;
+        margin-top: -10px;
+    }
+}
+
+
+.card1{
+     transition: margin-top 0.3s ease;
+}
+.card1.menu-open{
+    margin-top: 170px;
+}
+.card-title{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+}
+.card-text{
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px 30px;
+    line-height: 33px;
+}
+.img-solution{
+    width: 100%;
+    height: auto;
+    max-width: 475px;
+    margin: 0;
+    display: block;
+    border-radius: 5px !important;
+}
+
+/* === RESPONSIVE STYLES === */
+
+        /* Pantallas medianas y pequeñas (tablets y móviles) */
+        @media (max-width: 767px) {
+            /* Reorganizar las columnas para que la imagen esté arriba */
+            .row.g-0 {
+                flex-direction: column;
+            }
+            
+            /* Columna de imagen - centrada y arriba */
+            .col-md-4 {
+                order: 1;
+                text-align: center;
+                padding: 1rem 0;
+            }
+            
+            /* Columna de texto - debajo */
+            .col-md-8 {
+                order: 2;
+            }
+            
+            /* Imagen centrada y con tamaño apropiado */
+            .img-solution {
+                max-width: 300px;
+                margin: 0 auto;
+                border-radius: 5px !important;
+            }
+            
+            /* Ajustar título */
+            .card-title {
+                font-size: 24px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            
+            /* Ajustar texto */
+            .card-text {
+                font-size: 16px;
+                margin: 20px 20px;
+                line-height: 28px;
+                text-align: justify;
+            }
+            
+            /* Ajustar padding del card */
+            .card-body {
+                padding: 1rem;
+            }
+        }
+
+        /* Móviles pequeños */
+        @media (max-width: 575px) {
+            .card1 {
+                padding: 1rem;
+            }
+            
+            .img-solution {
+                max-width: 250px;
+                border-radius: 5px !important;
+            }
+            
+            .card-title {
+                font-size: 20px;
+                margin-top: 10px;
+                text-align: center;
+            }
+            
+            .card-text {
+                font-size: 14px;
+                margin: 15px 15px;
+                line-height: 24px;
+                text-align: justify;
+            }
+        }
+
+        /* Móviles muy pequeños */
+        @media (max-width: 374px) {
+            .card1 {
+                padding: 0.5rem;
+            }
+            
+            .img-solution {
+                max-width: 200px;
+                border-radius: 5px !important;
+            }
+            
+            .card-title {
+                font-size: 18px;
+                text-align: center;
+            }
+            
+            .card-text {
+                font-size: 13px;
+                margin: 10px 10px;
+                line-height: 22px;
+                text-align: justify;
+            }
+        }
+
+        /* Mantener diseño horizontal en pantallas grandes */
+        @media (min-width: 768px) {
+            .img-solution {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+.section1{
+    background-color: #4C3D19;
+    color: aliceblue;
+}
+.accordion-title{
+    font-family: "Mozilla Headline", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.accordion-button{
+    font-family: "Mozilla Headline", sans-serif;
+    text-align: center!important;
+    justify-content: center!important;
+    display: block;
+    padding:3px
+}
+.accordion-body{
+    font-family: "Karla", sans-serif;
+    text-align: justify;
+    padding: 20px;
+}
+
+.video{
+    width: 800px;
+    height: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+}
+@media (max-width: 768px) {
+    .video {
+        width: 90vw; /* 90% del ancho de la ventana */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .video {
+        width: 95vw;
+        height: auto;
+    }
+}
+.video {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    display: block;
+    aspect-ratio: 650 / 400; /* Mantiene la proporción 650:400 */
+}
+
+.serial-monitor{
+    background-color: #889063;
+    margin: 0;
+    padding: 0;
+    min-height: 110vh;
+}
+.img-SM{
+    width: 100%;
+    height: auto;
+    margin: 0 0 auto;
+    padding: 20px;
+    padding-top: 0px;
+}
+.title-SM{
+    font-family: "Mozilla Headline", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 25px!important;
+    padding: 15px;
+}
+.p-SM{
+    font-family: "Karla", sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    padding: 30px;
+}

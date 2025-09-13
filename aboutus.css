@@ -1,0 +1,352 @@
+/*font-family: "Mozilla Headline", sans-serif; Titulo*/
+/*font-family: "Karla", sans-serif; Texto*/
+
+.navbar{
+    height: 90px; 
+    background-color: #f5edd6 !important; 
+    font-family:"Karla",sans-serif; 
+    font-size: 20px; 
+    font-weight: 580;
+}
+.navbar-collapse{
+    background-color: #f5edd6;
+    border-radius: 5px;
+    margin: 0!important;
+    padding: 0!important;
+    width: 100%!important;
+    display: none !important;
+}
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #f5edd6;
+        margin-left: -15px!important;
+        margin-right: -15px!important;
+        padding: 15px!important;   
+    }
+    .navbar-collapse.show {
+        display: block !important;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-collapse {
+        background-color: #f5edd6;
+    }
+    .navbar-collapse.show {
+        display: block !important;
+    }
+
+}
+.navbar-collapse.show~ .navbar-brand .logo-navbar{
+    transform: translateY(-80px);
+    transition: transform 0.3s ease-in;
+}
+.nav-link{
+    display: flex; 
+    align-items: center;
+}
+.logo-navbar{
+    height: 80px;/*altura fija*/
+    max-width: 200px;/*ancho max*/
+    width: auto;/*ancho automatico*/
+    margin-left: auto;
+    order: 999;
+    z-index: 100;
+}
+/*telefonos, logo mas pequeño*/
+@media (max-width: 768px) {
+    .logo-navbar {
+        height: 80px; /*altura fija para pantallas pequeñas*/
+        max-width: 180px;
+        margin-top: -10px;
+    }
+}
+/*telefonos, mas pequeños*/
+@media (max-width: 480px) {
+    .logo-navbar {
+        height: 55px; /*altura fija para pantallas muy pequeñas*/
+        max-width: 150px;
+        margin-top: -10px;
+    }
+}
+
+
+
+.img-main{
+   transition: margin-top 0.3s ease!important;
+}
+.img-main.menu-open{
+    margin-top: 170px; 
+}
+
+/* Contenedor principal de la imagen */
+.img-main {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden; /* Ocultar cualquier desbordamiento */
+    position: relative;
+}
+
+/* Imagen a pantalla completa */
+.img-main img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Mantiene proporciones cubriendo todo el espacio */
+}
+
+/* Pantallas de laptops grandes (1200px en adelante) */
+@media (min-width: 1200px) {
+    .img-main img {
+        object-position: center center; /* Centrado de la imagen dentro del contenedor */
+    }
+}
+
+/* Pantallas de laptops medianas (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .img-main {
+        height: auto; /* Altura automática para mostrar toda la imagen */
+    }
+    
+    .img-main img {
+        height: auto; /* Altura automática */
+        object-fit: contain; /* Muestra toda la imagen sin cortarla */
+        object-position: center center;
+    }
+}
+
+/* Pantallas pequeñas - tablets y móviles (hasta 767px) */
+@media (max-width: 767px) {
+    .img-main {
+        height: auto; /* Altura automática para mostrar toda la imagen */
+    }
+    
+    .img-main img {
+        height: auto; /* Altura automática */
+        object-fit: contain; /* Muestra toda la imagen sin cortarla */
+        object-position: center center;
+    }
+}
+
+/* Pantallas muy pequeñas - móviles (hasta 480px) */
+@media (max-width: 480px) {
+    .img-main {
+        height: auto; /* Altura automática */
+    }
+    
+    .img-main img {
+        height: auto; /* Altura automática */
+        object-fit: contain; /* Muestra toda la imagen sin cortarla */
+        object-position: center center;
+    }
+}
+
+
+/* Estilos base */
+.section1 {
+    background-color: #354024;
+    color: aliceblue;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-horizontal {
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Cards para pantallas grandes */
+.card-maria, .card-aura {
+    width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+.card-maria img, .card-aura img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.card-titleM, .card-titleA {
+    font-family: "Mozilla Headline", sans-serif;
+    margin-top: 100px;
+}
+
+.card-titleM {
+    margin-left: 30px;
+}
+
+.card-titleA {
+    margin-left: 50px;
+}
+
+.card-textM, .card-textA {
+    font-family: "Karla", sans-serif;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.card-textM {
+    margin-left: 30px;
+}
+
+.card-textA {
+    margin-left: 50px;
+    margin-right: 3%;
+}
+
+/* Pantallas grandes - Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .card-maria, .card-aura {
+        width: 95%;
+        max-width: 1200px;
+    }
+}
+
+/* Pantallas medianas - Tablets en horizontal (992px - 1199px) */
+@media (max-width: 1199px) {
+    .card-maria, .card-aura {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .card-maria img, .card-aura img {
+        min-height: 350px;
+        max-height: 400px;
+    }
+    
+    .card-titleM, .card-titleA {
+        margin-top: 60px;
+        font-size: 1.8rem;
+    }
+    
+    .card-textM, .card-textA {
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Tablets en vertical (768px - 991px) */
+@media (max-width: 991px) {
+    .section1 {
+        padding: 30px 15px;
+    }
+    
+    .card-maria, .card-aura {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .card-maria img, .card-aura img {
+        min-height: 300px;
+        max-height: 350px;
+    }
+    
+    .card-titleM, .card-titleA {
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 1.6rem;
+    }
+    
+    .card-textM, .card-textA {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* Móviles grandes (576px - 767px) */
+@media (max-width: 767px) {
+    .section1 {
+        padding: 20px 10px;
+    }
+    
+    .card-horizontal {
+        margin-bottom: 30px;
+    }
+    
+    .card-maria, .card-aura {
+        width: 95%;
+        padding: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Las cards se vuelven verticales */
+    .card-maria .row, .card-aura .row {
+        flex-direction: column;
+    }
+    
+    .card-maria .col-md-4, .card-maria .col-md-8,
+    .card-aura .col-md-4, .card-aura .col-md-8 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    
+    .card-maria img, .card-aura img {
+        min-height: 250px;
+        max-height: 300px;
+        margin-bottom: 15px;
+    }
+    
+    .card-titleM, .card-titleA {
+        margin-top: 15px;
+        margin-left: 15px;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .card-textM, .card-textA {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 0.9rem;
+        text-align: justify;
+        line-height: 1.6;
+    }
+}
+
+/* Móviles pequeños (hasta 575px) */
+@media (max-width: 575px) {
+    .section1 {
+        padding: 15px 5px;
+    }
+    
+    .card-maria, .card-aura {
+        width: 98%;
+        padding: 8px;
+    }
+    
+    .card-maria img, .card-aura img {
+        min-height: 200px;
+        max-height: 250px;
+    }
+    
+    .card-titleM, .card-titleA {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .card-textM, .card-textA {
+        font-size: 0.85rem;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 1.5;
+    }
+    
+    .card-body {
+        padding: 10px;
+    }
+}

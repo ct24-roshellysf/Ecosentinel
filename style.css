@@ -1,0 +1,593 @@
+/*font-family: "Mozilla Headline", sans-serif; Titulo*/
+/*font-family: "Karla", sans-serif; Texto*/
+
+.navbar{
+    height: 90px; 
+    background-color: #f5edd6 !important; 
+    font-family:"Karla",sans-serif; 
+    font-size: 20px; 
+    font-weight: 580;
+}
+.navbar-collapse{
+    background-color: #f5edd6;
+    border-radius: 5px;
+    margin: 0!important;
+    padding: 0!important;
+    width: 100%!important;
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #f5edd6;
+        margin-left: -15px!important;
+        margin-right: -15px!important;
+        padding: 15px!important;
+    }
+    .navbar-collapse.show{
+    display: block !important;
+}
+}
+@media (max-width: 480px) {
+    .navbar-collapse {
+        background-color: #f5edd6;
+    }
+    .navbar-collapse.show{
+    display: block !important;
+}
+}
+.navbar-collapse.show~ .navbar-brand .logo-navbar{
+    transform: translateY(-80px);
+    transition: transform 0.3s ease-in;
+}
+.nav-link{
+    display: flex; 
+    align-items: center;
+}
+.logo-navbar{
+    height: 80px;/*altura fija*/
+    max-width: 200px;/*ancho max*/
+    width: auto;/*ancho automatico*/
+    margin-left: auto;
+    order: 999;
+    z-index: 100;
+}
+/*telefonos, logo mas pequeño*/
+@media (max-width: 768px) {
+    .logo-navbar {
+        height: 80px; /*altura fija para pantallas pequeñas*/
+        max-width: 180px;
+        margin-top: -10px;
+    }
+}
+/*telefonos, mas pequeños*/
+@media (max-width: 480px) {
+    .logo-navbar {
+        height: 55px; /*altura fija para pantallas muy pequeñas*/
+        max-width: 150px;
+        margin-top: -10px;
+    }
+}
+
+.section1{
+    transition: margin-top 0.3s ease; /* Transición suave para el margen superior */
+}
+.section1.menu-open{
+    margin-top: 170px;
+}
+
+.gutter1{
+    background-color: #354024;
+}
+.img-gutter1{
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para un mejor diseño */
+    transition: transform 0.3s ease;
+}
+
+.img-gutter1:hover{
+    transform: scale(1.05);
+}
+.gutter1 .col{
+    margin-bottom: 10px;
+}
+
+@media(min-width:1200px){
+    .gutter1{
+        padding: 60px 40px;
+    }
+    .img-gutter1{
+        height: 300px;
+    }
+    .gutter1 .row{
+        margin: 0 -30px;
+    }
+    .gutter1 .col{
+        padding: 0 30px;
+        margin-bottom: 0;
+    }
+}
+/* Pantallas grandes - Laptops (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .gutter1 {
+        padding: 50px 30px;
+    }
+    
+    .img-gutter1 {
+        height: 280px;
+    }
+    
+    .gutter1 .col {
+        margin-bottom: 0;
+    }
+}
+
+/* Pantallas medianas - Tablets horizontales (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .gutter1 {
+        padding: 40px 20px;
+    }
+    
+    .img-gutter1 {
+        height: 250px; /* Mantiene altura estándar */
+    }
+    
+    .gutter1 .col {
+        margin-bottom: 0;
+    }
+    
+    .gutter1 .row {
+        margin: 0 -15px;
+    }
+}
+
+/* Tablets verticales y móviles grandes (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .gutter1 {
+        padding: 30px 15px;
+    }
+    
+    /* Cambiar a 2 columnas en tablets verticales */
+    .gutter1 .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .gutter1 .col {
+        flex: 0 0 50%; /* 2 columnas */
+        max-width: 50%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .img-gutter1 {
+        height: 200px; /* Altura reducida para 2 columnas */
+    }
+}
+
+/* Móviles pequeños (hasta 575px) */
+@media (max-width: 575px) {
+    .gutter1 {
+        padding: 20px 10px;
+    }
+    
+    /* Una columna en móviles */
+    .gutter1 .row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gutter1 .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .img-gutter1 {
+        height: 220px; /* Altura optimizada para móviles */
+        max-width: 90%; /* Reduce el ancho para mejor visualización */
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Móviles muy pequeños (hasta 375px) */
+@media (max-width: 375px) {
+    .gutter1 {
+        padding: 15px 8px;
+    }
+    
+    .gutter1 .col {
+        padding: 5px;
+        margin-bottom: 12px;
+    }
+    
+    .img-gutter1 {
+        height: 180px; /* Altura mínima para pantallas pequeñas */
+        max-width: 95%;
+        border-radius: 8px; /* Bordes menos redondeados */
+    }
+}
+
+.card1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    position: relative; /* Para el overlay */
+}
+.card1-header{
+    background-color: #889063;
+    border-radius: 5px;
+    width: 500px;
+    padding: 10px;
+    margin: 0 auto 15px auto; /* Centrado horizontal y margen inferior */
+    margin-top: 15px;
+    font-family: "Mozilla Headline", sans-serif;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.card1-text{
+    background-color: #CFBB99;
+    border-radius: 5px;
+    width: 1200px;
+    padding: 15px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: "Karla", sans-serif;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    line-height: 1.4; /* Mejor legibilidad */
+    position: relative; /* Para el overlay */
+}
+/* Pantallas muy grandes - Desktops (1400px en adelante) */
+@media (min-width: 1400px) {
+    .card1-header {
+        width: 600px;
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+    
+    .card1-text {
+        width: 1400px;
+        font-size: 22px;
+        padding: 20px;
+    }
+}
+
+/* Pantallas grandes - Laptops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .card1-header {
+        width: 500px;
+        font-size: 1.5rem;
+    }
+    
+    .card1-text {
+        width: 1200px;
+        font-size: 20px;
+    }
+}
+
+/* Pantallas medianas - Tablets horizontales (992px - 1199px) */
+@media (max-width: 1199px) {
+    .card1 {
+        padding: 15px;
+    }
+    
+    .card1-header {
+        width: 450px;
+        font-size: 1.4rem;
+        padding: 12px;
+    }
+    
+    .card1-text {
+        width: 900px;
+        max-width: 900px;
+        font-size: 18px;
+        padding: 18px;
+        margin: 0 auto;
+    }
+}
+
+/* Tablets verticales (768px - 991px) */
+@media (max-width: 991px) {
+    .card1 {
+        padding: 15px;
+    }
+    
+    .card1-header {
+        width: 400px;
+        font-size: 1.3rem;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .card1-text {
+        width: 700px;
+        max-width: 700px;
+        font-size: 17px;
+        padding: 15px;
+        line-height: 1.7;
+    }
+}
+
+/* Móviles grandes - Smartphones horizontales (576px - 767px) */
+@media (max-width: 767px) {
+    .card1 {
+        padding: 10px;
+    }
+    
+    .card1-header {
+        width: 350px;
+        max-width: 350px;
+        font-size: 1.2rem;
+        padding: 8px;
+        margin-bottom: 15px;
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card1-text {
+        width: 500px;
+        font-size: 16px;
+        padding: 12px;
+        line-height: 1.8;
+        text-align: left; /* Mejor legibilidad en móviles */
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Móviles pequeños (hasta 575px) */
+@media (max-width: 575px) {
+    .card1 {
+        padding: 8px;
+    }
+    
+    .card1-header {
+        width: 300px;
+        font-size: 1.1rem;
+        padding: 6px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card1-text {
+        width: 510px;
+        text-align: justify !important;
+        font-size: 15px;
+        padding: 10px;
+        line-height: 1.8;
+        text-align: left;
+        border-radius: 8px; /* Bordes más suaves en móviles */
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Móviles muy pequeños (hasta 375px) */
+@media (max-width: 375px) {
+    .card1-header {
+        width: 280px;
+        font-size: 1rem;
+        padding: 5px;
+    }
+    
+    .card1-text {
+        width: 320px;
+        font-size: 14px;
+        padding: 8px;
+        line-height: 1.7;
+        
+    }
+}
+
+
+
+
+
+.Ft-carousel{
+    height: 500px;
+    max-width: 600px;
+    margin: 30px auto 30px auto; /*50px de arriba, auto horizontal, 30px de abajo*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Ft-carousel img{
+    margin-top: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /*lo mantiene sin recortar*/
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0);
+}
+
+.FAQ{
+    background-color: #4C3D19;
+    color: aliceblue;
+}
+.accordion-title{
+    font-family: "Mozilla Headline", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.accordion-button{
+    font-family: "Mozilla Headline", sans-serif;
+    font-size: 18px;
+    text-align: center!important;
+    justify-content: center!important;
+    display: block;
+    padding: 10px;
+}
+.accordion-body{
+    font-family: "Karla", sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    padding: 20px;
+}
+
+
+.gutter2{
+    background-color: #889063;
+}
+.img-gutter2{
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para un mejor diseño */
+    transition: transform 0.3s ease;
+}
+
+.img-gutter2:hover{
+    transform: scale(1.05);
+}
+.gutter2 .col{
+    margin-bottom: 10px;
+}
+
+@media(min-width:1200px){
+    .gutter2{
+        padding: 60px 40px;
+    }
+    .img-gutter2{
+        height: 200px;
+    }
+    .gutter2 .row{
+        margin: 0 -30px;
+    }
+    .gutter2 .col{
+        padding: 0 30px;
+        margin-bottom: 0;
+    }
+}
+/* Pantallas grandes - Laptops (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .gutter2 {
+        padding: 50px 30px;
+    }
+    
+    .img-gutter2 {
+        height: 200px;
+    }
+    
+    .gutter2 .col {
+        margin-bottom: 0;
+    }
+}
+
+/* Pantallas medianas - Tablets horizontales (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .gutter2 {
+        padding: 40px 20px;
+    }
+    
+    .img-gutter2 {
+        height: 180px; /* Mantiene altura estándar */
+        width: 100%;
+    }
+    
+    .gutter2 .col {
+        margin-bottom: 0;
+    }
+    
+    .gutter2 .row {
+        margin: 0 -15px;
+    }
+}
+
+/* Tablets verticales y móviles grandes (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .gutter2 {
+        padding: 30px 15px;
+    }
+    
+    /* Cambiar a 2 columnas en tablets verticales */
+    .gutter2 .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .gutter2 .col {
+        flex: 0 0 50%; /* 2 columnas */
+        max-width: 50%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .img-gutter2 {
+        height: 200px; /* Altura reducida para 2 columnas */
+    }
+}
+
+/* Móviles pequeños (hasta 575px) */
+@media (max-width: 575px) {
+    .gutter2 {
+        padding: 20px 10px;
+    }
+    
+    /* Una columna en móviles */
+    .gutter2 .row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gutter2 .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .img-gutter2 {
+        height: 200px; /* Altura optimizada para móviles */
+        max-width: 40%; /* Reduce el ancho para mejor visualización */
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Móviles muy pequeños (hasta 375px) */
+@media (max-width: 375px) {
+    .gutter2 {
+        padding: 15px 8px;
+    }
+    
+    .gutter2 .col {
+        padding: 5px;
+        margin-bottom: 12px;
+    }
+    
+    .img-gutter2 {
+        height: 100px; /* Altura mínima para pantallas pequeñas */
+        max-width: 35%;
+        border-radius: 8px; /* Bordes menos redondeados */
+    }
+}
+
+
+.footer{
+    background-color: #354024;
+    color: white; 
+    padding: 10px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+.email-contact{
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.logo-footer{
+    height: 80px;
+    width: auto;
+    max-width: 200px;
+}

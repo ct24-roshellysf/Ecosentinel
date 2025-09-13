@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mozilla+Headline:wght@200..700&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ecosentinel</title>
+</head>
+
+<body>
+<header>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="solution.html">Solución</a>
+        <a class="nav-link" href="aboutus.html">Sobre nosotras</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </div>
+    </div>
+    <a class="navbar-brand ms-auto" href="#"><img class="logo-navbar" src="logo ecosentinel.jpg" alt="logo">
+    </a>
+  </div>
+</nav>
+</header>
+<section class="section1">
+    <div class="gutter1 overflow-hidden text-center">
+  <div class="row gx-5">
+    <div class="col">
+      <div class="p-3"><img class="img-gutter1" src="incendioPA.jpg" alt="foto1"></div>
+    </div>
+    <div class="col">
+      <div class="p-3"><img class="img-gutter1" src="prevencion animacion.jpg" alt="foto2"></div>
+    </div>
+    <div class="col">
+      <div class="p-3"><img class="img-gutter1" src="incendio2PA.jpg" alt="foto3"></div>
+    </div>
+  </div>
+</div>
+</section>
+<main style="background-color: #f5edd6;">
+    <div class="card1">
+        <div class="card-body">
+          <div class="card1-header">
+            <h1 class="card1-title">Ecosentinel</h1>
+            <h4>Monitoreo y Prevención de incendios forestales</h4>
+          </div>
+            <p class="card1-text">En Panamá, los incendios forestales se han intensificado en los últimos 
+              años debido al cambio climático, las actividades humanas no reguladas y la falta de conciencia ambiental, 
+              provocando la pérdida de hábitats naturales e impactos sociales y económicos significativos. Frente a esta 
+              problemática, surge la necesidad de comprender a fondo sus causas, efectos y soluciones, lo que motiva el 
+              desarrollo de un sistema de prevención de incendios orientado a la detección temprana de posibles focos de 
+              fuego en zonas vulnerables. Este sistema integra tecnologías de monitoreo ambiental y comunicación a distancia 
+              para garantizar una vigilancia constante, facilitando una respuesta rápida y eficiente que proteja tanto el medio 
+              ambiente como a las comunidades cercanas. La propuesta se basa en un circuito electrónico con una placa ESP32 como 
+              unidad de procesamiento central, conectada a sensores DHT11 para medir temperatura y humedad relativa, sensores 
+              PIR para la detección de movimiento y sensores MQ-135 para monitorear la calidad del aire y detectar gases contaminantes 
+              o inflamables, transmitiendo la información mediante módulos LoRa que permiten cubrir grandes extensiones con bajo consumo 
+              energético. Con ello, se busca generar alertas tempranas que puedan ser visualizadas por autoridades ambientales o comunidades, 
+              fortaleciendo la prevención y respuesta ante riesgos, en coherencia con los Objetivos de Desarrollo Sostenible, especialmente 
+              el ODS 13 (Acción por el clima) y el ODS 15 (Vida de ecosistemas terrestres).</p>
+        </div>
+    </div>
+</main>
+<section class="section2">
+    <div style="background-color: #4C3D19;" id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="esquema prototipo.png" class="Ft-carousel d-block w-100" alt="foto1">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="prototipo en arbol.jpg" class="Ft-carousel d-block w-100" alt="foto2">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pantalla lcd.jpg" class="Ft-carousel d-block w-100" alt="foto3">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+<div class="FAQ accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h1 class="accordion-title">FAQ</h1>
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        •	¿Qué tan efectiva es la integración de sensores ambientales conectados mediante tecnologías IoT, para la detección temprana de incendios forestales en ecosistemas vulnerables?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Tras las pruebas del prototipo se concluyó que la integración de sensores de temperatura, humedad, calidad del aire y movimiento, junto con un módulo LoRa,
+        demostró la viabilidad de un sistema de monitoreo temprano de incendios forestales. Su diseño simple, de bajo costo y gran alcance lo convierte en una herramienta práctica, accesible y adaptable
+        a distintos entornos, con especialidad utilidad en áreas remotas sin redes de comunicación.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        •	¿Qué protocolo usan los nodos para escalar sin perder eficiencia energética ni autonomía?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">El prototipo destaca por su independencia tecnológica, sostenibilidad y escalabilidad, lo que permite su implementación en contextos de recursos limitados y su 
+        espansión mediante nodos de monitoreo. Estas características lo posicionan como un aliado estretégico para comunidades y autoridades, al facilitar la detección temprana de riesgos y una respuesta más rápida frente a emergencias.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        •	¿Qué aspectos del diseño del sistema pueden facilitar su escalabilidad y adaptación a distintos tipos de terreno o ecosistemas?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">En conjunto, el sistema aporta al cumplimiento del ODS 13 Acción por el clima y ODS 15 Vida de ecosistemas terrestres, al contribuir a la protección de ecosistemas, la reducción de la degradación 
+        ambiental y la mejora de la resiliencia frente a incendios forestales.
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section3">
+     <div class="gutter2 overflow-hidden text-center">
+  <div class="row gx-5">
+    <div class="col">
+      <div class="p-3"><img class="img-gutter2" src="mq-135.jpg" alt="MQ-135"></div>
+    </div>
+    <div class="col">
+      <div class="p-3"><img class="img-gutter2" src="lora.png" alt="LoRa"></div>
+    </div>
+    <div class="col">
+      <div class="p-3"><img class="img-gutter2" src="pir.png" alt="PIR"></div>
+    </div>
+    <div class="col">
+      <div class="p-3"><img class="img-gutter2" src="dth11.jpg" alt="DHT11"></div>
+    </div>
+  </div>
+</div>
+</section> 
+<footer class="footer">
+    <div class="email-contact">
+    <p>© 2025 Ecosentinel. Todos los derechos reservados.</p>
+    <i class="fas fa-envelope" style="color: #ea4335;"></i>
+    <span>proyectos34stem@gmail.com</span>
+    </div>
+    <img class="logo-footer" src="logo ecosentinel sin fondo.png" alt="logo">
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+            const navbarToggler = document.querySelector('.navbar');
+            const section1 = document.querySelector('.section1');
+            const navbarCollapse = document.querySelector('#navbarNavAltMarkup');
+            
+            // Escuchar cuando se abre/cierra el menú de Bootstrap
+            navbarCollapse.addEventListener('shown.bs.collapse', function () {
+                // Menú se abrió
+                section1.classList.add('menu-open');
+            });
+            
+            navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+                // Menú se cerró
+                section1.classList.remove('menu-open');
+            });
+        });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  
+</script>
+</body>
+</html>

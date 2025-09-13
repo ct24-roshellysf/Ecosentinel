@@ -1,0 +1,324 @@
+/*font-family: "Mozilla Headline", sans-serif; Titulo*/
+/*font-family: "Karla", sans-serif; Texto*/
+
+.navbar{
+    height: 90px; 
+    background-color: #f5edd6 !important; 
+    font-family:"Karla",sans-serif; 
+    font-size: 20px; 
+    font-weight: 580;
+}
+.navbar-collapse{
+    background-color: #f5edd6;
+    border-radius: 5px;
+    margin: 0!important;
+    padding: 0!important;
+    width: 100%!important;
+    display: none !important;
+}
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #f5edd6;
+        margin-left: -15px!important;
+        margin-right: -15px!important;
+        padding: 15px!important;
+    }
+    .navbar-collapse.show {
+        display: block !important;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-collapse {
+        background-color: #f5edd6;
+    }
+    .navbar-collapse.show {
+        display: block !important;
+    }
+
+}
+.navbar-collapse.show~ .navbar-brand .logo-navbar{
+    transform: translateY(-80px);
+    transition: transform 0.3s ease-in;
+}
+.nav-link{
+    display: flex; 
+    align-items: center;
+}
+.logo-navbar{
+    height: 80px;/*altura fija*/
+    max-width: 200px;/*ancho max*/
+    width: auto;/*ancho automatico*/
+    margin-left: auto;
+    order: 999;
+    z-index: 100;
+}
+/*telefonos, logo mas pequeño*/
+@media (max-width: 768px) {
+    .logo-navbar {
+        height: 80px; /*altura fija para pantallas pequeñas*/
+        max-width: 180px;
+        margin-top: -10px;
+    }
+}
+/*telefonos, mas pequeños*/
+@media (max-width: 480px) {
+    .logo-navbar {
+        height: 55px; /*altura fija para pantallas muy pequeñas*/
+        max-width: 150px;
+        margin-top: -10px;
+    }
+}
+
+
+.main-contact{
+   transition: margin-top 0.3s ease!important;
+}
+.main-contact.menu-open{
+    margin-top: 170px;
+}
+
+/* From Uiverse.io by Smit-Prajapati */ 
+
+.main-contact{
+    background-color: #f5edd6;
+    padding: 85px;
+    border: #354024 1px solid;
+}
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #001925;
+  padding: 30px;
+  border-left: 5px solid #354024;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid #fa0606;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #013747;
+  color: #fa0606;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #fa0606;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #354024;
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid #fa0606;
+  color: #fa0606;
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #fa0606);
+  flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #fa0606;
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #fa0606;
+  color: #001925;
+}
+
+/* Tablets y pantallas medianas (768px - 991px) */
+@media (max-width: 991px) {
+  .main-contact {
+    padding: 50px 30px;
+  }
+  
+  .form-container {
+    max-width: 90%;
+    padding: 25px;
+  }
+  
+  .heading {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+  
+  .form-container .form .input,
+  .form-container .form .textarea {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  
+  .form-container .form .button-container {
+    gap: 15px;
+  }
+  
+  .form-container .form .button-container .send-button,
+  .form-container .form .button-container .reset-button-container .reset-button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Pantallas pequeñas y móviles (576px - 767px) */
+@media (max-width: 767px) {
+  .main-contact {
+    padding: 30px 20px;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    max-width: 95%;
+    padding: 20px;
+    border-left: 3px solid #354024;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+  }
+  
+  .heading {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-container .form .input,
+  .form-container .form .textarea {
+    padding: 14px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .form-container .form .textarea {
+    max-height: 120px;
+  }
+  
+  .form-container .form .button-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-container .form .button-container .send-button {
+    flex-basis: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+  
+  .form-container .form .button-container .reset-button-container {
+    flex-basis: 100%;
+  }
+  
+  .form-container .form .button-container .reset-button-container .reset-button {
+    padding: 14px;
+    font-size: 1.1rem;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+  }
+}
+
+/* Móviles muy pequeños (hasta 575px) */
+@media (max-width: 575px) {
+  .main-contact {
+    padding: 20px 15px;
+  }
+  
+  .form-container {
+    max-width: 100%;
+    padding: 15px;
+    margin: 0 10px;
+  }
+  
+  .heading {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .form-container .form .input,
+  .form-container .form .textarea {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  
+  .form-container .form .button-container .send-button,
+  .form-container .form .button-container .reset-button-container .reset-button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Móviles ultra pequeños (hasta 374px) */
+@media (max-width: 374px) {
+  .main-contact {
+    padding: 15px 10px;
+  }
+  
+  .form-container {
+    padding: 12px;
+    margin: 0 5px;
+  }
+  
+  .heading {
+    font-size: 1.1rem;
+  }
+  
+  .form-container .form .input,
+  .form-container .form .textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .form-container .form .button-container .send-button,
+  .form-container .form .button-container .reset-button-container .reset-button {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
