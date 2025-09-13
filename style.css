@@ -356,7 +356,7 @@
     }
     
     .card1-text {
-        width: 510px;
+        width: 490px;
         text-align: justify !important;
         font-size: 15px;
         padding: 10px;
@@ -376,7 +376,7 @@
     }
     
     .card1-text {
-        width: 320px;
+        width: 300px;
         font-size: 14px;
         padding: 8px;
         line-height: 1.7;
@@ -590,4 +590,5 @@
     height: 80px;
     width: auto;
     max-width: 200px;
+
 }
